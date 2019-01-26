@@ -1,0 +1,34 @@
+{
+    "name": "affcool/elasticsearch",
+    "description": "affcool elasticsearch module",
+	"keywords": ["elasticsearch", "affcool","laravel","php"],
+	"homepage": "https://github.com/affcool/elasticsearch",
+    "license": "MIT",
+	"authors": [
+        {
+            "email": "support@aff.cool",
+			"homepage": "https://turimor.com/"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.3",
+        "elasticsearch/elasticsearch": "~6.0"
+    },
+	"autoload": {
+        "files": [
+        ],
+        "psr-4": {
+            "Turimor\\ElasticSearch\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Turimor\\ElasticSearch\\LaravelServiceProvider"
+        ],
+        "aliases": {
+        }
+      }
+    }
+}
